@@ -71,14 +71,3 @@ pipeline {
         }
     }
 }
-```
-
-- Commit the change, then push the script to the remote repo.
-
-```bash
-git add .
-git commit -m 'added jenkinsfile petclinic-weekly-qa for release branch'
-git push --set-upstream origin feature/msp-21
-git checkout dev
-git merge feature/msp-21
-git push origin dev
